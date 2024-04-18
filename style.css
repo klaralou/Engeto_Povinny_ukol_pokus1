@@ -1,0 +1,352 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0;
+  margin: 0 20px;
+}
+
+/* NAVIGATION */
+.navigation {
+  background-color: #33292a;
+  padding: 30px;
+}
+.navigation-wraper {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navigation-item {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-wraper {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url("images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 650px;
+}
+
+.nadpis {
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .nadpis {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* ABOUT US SECTION */
+
+.about-wraper {
+  display: flex;
+  margin: 48px;
+  gap: 24px;
+}
+
+.about-text {
+  text-align: center;
+  width: 50%;
+  background-color: #f2f2f2;
+}
+
+.fotka-1 {
+  background-image: url(images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg);
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .about-wraper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fotka-1 {
+    background-position: center 80%;
+    height: 200px;
+  }
+}
+
+/* WHAT WE DO */
+.activities {
+  background-color: #33292a;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+
+.icone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-container {
+  max-width: 200px;
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+.icon {
+  width: 100%;
+}
+
+.icon img {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .icone {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+/* OUR TRIPS */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+.gallery-item {
+  height: 200px;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.photo {
+  background-image: url(images/vincentiu-solomon-7MH4ped6_Mo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-1 {
+  background-image: url(images/simon-english-48nerZQCHgo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-2 {
+  background-image: url(images/patrick-szylar-45bM3XGqnDE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.photo-3 {
+  background-image: url(images/omer-salom-LoijtQXXNhs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-4 {
+  background-image: url(images/matej-drha-rbDzMcJsBkY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-5 {
+  background-image: url(images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.photo-6 {
+  background-image: url(images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-7 {
+  background-image: url(images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  background-color: #f2f2f2;
+  background-image: none;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+/* WHERE DO YOU WANT TO GO */
+.contact-container {
+  background-color: #644b4f;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  color: #f2f2f2;
+  font-size: 35px;
+  min-width: auto;
+  margin: 30px;
+}
+
+.box2 {
+  color: #f2f2f2;
+  max-width: 50%;
+  margin: 30px;
+}
+
+.button {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  border-radius: 15px;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* REVIWES */
+.reviews {
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+.description {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+}
+.review-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .review-wrapper {
+    flex-direction: column;
+  }
+}
+
+/*CARDS*/
+.review-card {
+  max-width: 300px;
+  text-align: center;
+}
+.review-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text {
+  margin-top: 10px;
+}
+.name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/*GALLERY*/
+.images {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item1 {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .item1 {
+    flex: 1 1 50%;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  height: 200px;
+  background-color: #33292a;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-text {
+  padding: 50px;
+}
